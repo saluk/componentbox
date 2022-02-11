@@ -1,0 +1,120 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Card.gd" type="Script" id=2]
+[ext_resource path="res://CardTheme.tres" type="Theme" id=3]
+[ext_resource path="res://cinema_env.tres" type="Environment" id=4]
+[ext_resource path="res://CardTemplate.gd" type="Script" id=6]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 6 )
+sides = [ [ {
+"height": 715,
+"path": "card_template.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+}, {
+"bottom": 81,
+"left": 151,
+"right": 333,
+"top": 36,
+"type": "label",
+"var": "name"
+} ], [ {
+"height": 715,
+"path": "cardBack_blue1.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+} ] ]
+
+[sub_resource type="World" id=2]
+environment = ExtResource( 4 )
+
+[sub_resource type="World" id=3]
+environment = ExtResource( 4 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.5, 0.05, 1 )
+
+[sub_resource type="PlaneMesh" id=5]
+size = Vector2( 1, 2 )
+
+[sub_resource type="ViewportTexture" id=6]
+viewport_path = NodePath("Viewports/Front")
+
+[sub_resource type="SpatialMaterial" id=7]
+resource_local_to_scene = true
+params_cull_mode = 1
+albedo_texture = SubResource( 6 )
+
+[sub_resource type="ViewportTexture" id=8]
+flags = 4
+viewport_path = NodePath("Viewports/Back")
+
+[sub_resource type="SpatialMaterial" id=9]
+resource_local_to_scene = true
+params_cull_mode = 1
+albedo_texture = SubResource( 8 )
+
+[node name="Card" type="StaticBody"]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+script = ExtResource( 2 )
+template = SubResource( 1 )
+
+[node name="Viewports" type="Node" parent="."]
+
+[node name="Front" type="Viewport" parent="Viewports"]
+size = Vector2( 501, 701 )
+own_world = true
+world = SubResource( 2 )
+msaa = 4
+fxaa = true
+debanding = true
+usage = 1
+render_target_update_mode = 1
+physics_object_picking = true
+
+[node name="Control" type="Control" parent="Viewports/Front"]
+margin_right = 501.0
+margin_bottom = 701.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Viewport" parent="Viewports"]
+size = Vector2( 501, 701 )
+own_world = true
+world = SubResource( 3 )
+msaa = 4
+fxaa = true
+debanding = true
+usage = 1
+render_target_update_mode = 1
+physics_object_picking = true
+
+[node name="Control" type="Control" parent="Viewports/Back"]
+margin_right = 501.0
+margin_bottom = 701.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 4 )
+
+[node name="Body" type="Spatial" parent="."]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
+
+[node name="Front" type="MeshInstance" parent="Body"]
+transform = Transform( -1, 8.74228e-08, 1.74846e-07, -8.74228e-08, -1, -7.64274e-15, 1.74846e-07, -2.29282e-14, 1, 0, 0.05, 0 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 7 )
+
+[node name="Back" type="MeshInstance" parent="Body"]
+transform = Transform( 1, -6.6815e-22, 1.74846e-07, 0, 1, 7.64274e-15, -1.74846e-07, -7.64274e-15, 1, 0, -0.05, 0 )
+mesh = SubResource( 5 )
+material/0 = SubResource( 9 )
