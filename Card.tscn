@@ -1,8 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Card.gd" type="Script" id=2]
-[ext_resource path="res://CardTheme.tres" type="Theme" id=3]
-[ext_resource path="res://cinema_env.tres" type="Environment" id=4]
 [ext_resource path="res://CardTemplate.gd" type="Script" id=6]
 
 [sub_resource type="Resource" id=1]
@@ -29,34 +27,25 @@ sides = [ [ {
 "width": 483
 } ] ]
 
-[sub_resource type="World" id=2]
-environment = ExtResource( 4 )
-
-[sub_resource type="World" id=3]
-environment = ExtResource( 4 )
-
-[sub_resource type="BoxShape" id=4]
+[sub_resource type="BoxShape" id=2]
 extents = Vector3( 0.5, 0.01, 1 )
 
-[sub_resource type="PlaneMesh" id=5]
-size = Vector2( 1, 2 )
+[sub_resource type="PlaneMesh" id=3]
+size = Vector2( 1, 1 )
 
-[sub_resource type="ViewportTexture" id=6]
-viewport_path = NodePath("Viewports/Front")
-
-[sub_resource type="SpatialMaterial" id=7]
+[sub_resource type="SpatialMaterial" id=4]
 resource_local_to_scene = true
 params_cull_mode = 1
-albedo_texture = SubResource( 6 )
 
-[sub_resource type="ViewportTexture" id=8]
-flags = 4
-viewport_path = NodePath("Viewports/Back")
-
-[sub_resource type="SpatialMaterial" id=9]
+[sub_resource type="SpatialMaterial" id=5]
 resource_local_to_scene = true
 params_cull_mode = 1
-albedo_texture = SubResource( 8 )
+
+[sub_resource type="QuadMesh" id=6]
+size = Vector2( 1, 0.02 )
+
+[sub_resource type="QuadMesh" id=7]
+size = Vector2( 1, 0.02 )
 
 [node name="Card" type="KinematicBody"]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
@@ -65,57 +54,39 @@ template = SubResource( 1 )
 
 [node name="Viewports" type="Node" parent="."]
 
-[node name="Front" type="Viewport" parent="Viewports"]
-size = Vector2( 501, 701 )
-own_world = true
-world = SubResource( 2 )
-msaa = 4
-fxaa = true
-debanding = true
-usage = 1
-render_target_update_mode = 3
-physics_object_picking = true
-
-[node name="Control" type="Control" parent="Viewports/Front"]
-margin_right = 501.0
-margin_bottom = 701.0
-theme = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Back" type="Viewport" parent="Viewports"]
-size = Vector2( 501, 701 )
-own_world = true
-world = SubResource( 3 )
-msaa = 4
-fxaa = true
-debanding = true
-usage = 1
-render_target_update_mode = 1
-physics_object_picking = true
-
-[node name="Control" type="Control" parent="Viewports/Back"]
-margin_right = 501.0
-margin_bottom = 701.0
-theme = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 2 )
 
 [node name="Body" type="Spatial" parent="."]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0 )
 
 [node name="Front" type="MeshInstance" parent="Body"]
 transform = Transform( -1, 8.74228e-08, 1.74846e-07, -8.74228e-08, -1, -7.64274e-15, 1.74846e-07, -2.29282e-14, 1, 0, 0.005, 0 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 7 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
 
 [node name="Back" type="MeshInstance" parent="Body"]
 transform = Transform( 1, -6.6815e-22, 1.74846e-07, 0, 1, 7.64274e-15, -1.74846e-07, -7.64274e-15, 1, 0, -0.005, 0 )
-mesh = SubResource( 5 )
-material/0 = SubResource( 9 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 5 )
+
+[node name="Left" type="MeshInstance" parent="Body"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.5, 0, -2.18557e-08 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Right" type="MeshInstance" parent="Body"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -0.5, 0, 2.18557e-08 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Bottom" type="MeshInstance" parent="Body"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -0.5 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Top" type="MeshInstance" parent="Body"]
+transform = Transform( 1, 0, 1.42109e-14, 0, 1, 0, -1.42109e-14, 0, 1, 0, 0, 0.5 )
+mesh = SubResource( 7 )
+material/0 = null

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://CardTemplate.gd" type="Script" id=1]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource( 1 )
+sides = [ [ {
+"height": 715,
+"path": "magic_card.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+}, {
+"bottom": 81,
+"left": 151,
+"right": 333,
+"top": 36,
+"type": "label",
+"var": "name"
+} ], [ {
+"height": 715,
+"path": "cardBack_blue1.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+} ] ]

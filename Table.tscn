@@ -1,7 +1,23 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="OpenSimplexNoise" id=4]
+period = 8.0
+lacunarity = 0.58
+
+[sub_resource type="NoiseTexture" id=5]
+seamless = true
+as_normalmap = true
+bump_strength = 3.4
+noise = SubResource( 4 )
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.533333, 0.423529, 0.133333, 1 )
+metallic = 0.02
+metallic_specular = 0.07
+roughness_texture_channel = 4
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = SubResource( 5 )
 
 [node name="Table" type="CSGBox"]
 width = 12.0

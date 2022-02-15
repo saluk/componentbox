@@ -9,7 +9,10 @@ export var separation = 0.005
 
 func _ready():
 	Globals.register_node("surface", self)
-	Globals.register_message("drop_node", self)
+	#Globals.register_message("drop_node", self)
+	update_heights()
+	#for card in get_children():
+	#	card.move_down()
 
 # This is setting heights of the cards in order so that there are no overlaps
 # But it's probably better to handle this with collisions
@@ -24,6 +27,7 @@ func _process(delta):
 	pass
 
 # Drop a component - move it to the top of the stack
-func drop_node(node):
-	remove_child(node)
-	add_child(node)
+func drop_node(node:Node):
+	node.get_parent().remove_child(node)
+	if not is_a_parent_of(node):
+		add_child(node)
