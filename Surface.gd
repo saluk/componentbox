@@ -11,15 +11,17 @@ func _ready():
 	Globals.register_node("surface", self)
 	Globals.register_message("drop_node", self)
 
+# This is setting heights of the cards in order so that there are no overlaps
+# But it's probably better to handle this with collisions
 func update_heights():
 	var y = 0
 	for n in get_children():
 		n.translation.y = y
 		y += separation
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	update_heights()
+	#update_heights()
+	pass
 
 # Drop a component - move it to the top of the stack
 func drop_node(node):

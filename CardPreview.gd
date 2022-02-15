@@ -18,4 +18,3 @@ func clear_hover():
 	if card_copy != null:
 		card_copy = null
 		Globals.empty_node(vp.get_node("Preview/Component"))
-		print_stray_nodes()

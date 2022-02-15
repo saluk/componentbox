@@ -1,4 +1,4 @@
-extends Spatial
+extends KinematicBody
 
 var dragging = false
 
@@ -69,6 +69,7 @@ func build():
 				lbl.set("custom_fonts/font", load("res://fonts/robotto/robotto.tres"))
 				lbl.get("custom_fonts/font").size = 42
 				lbl.set("custom_colors/font_color", Color(0,0,0))
+				lbl.set("custom_colors/font_outline_modulate", Color(1,1,1))
 				lbl.text = values.get(component['var'], 'default')
 				lbl.margin_left = component['left']
 				lbl.margin_right = component['right']
@@ -97,14 +98,19 @@ func _ready():
 	connect("mouse_entered", self, "over_card")
 	connect("mouse_exited", self, "left_card")
 	build()
+	
+func drop():
+	#translation.y -= 0.5
+	for step in range(1/0.01):
+		move_and_collide(Vector3(0,-0.01,0))
+	Globals.call_message("drop_node", [self])
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		if not event.pressed:
 			if dragging:
 				dragging = false
-				body.translation.y -= 0.5
-				Globals.call_message("drop_node", [self])
+				drop()
 	if event is InputEventMouseMotion and dragging:
 		translation += Vector3(event.relative.x / 100, 0, event.relative.y/100)
 	if event is InputEventKey and event.pressed and event.scancode == KEY_F and Globals.current_mouse_component() == self:
@@ -120,7 +126,7 @@ func _input_event(camera, event, click_position, click_normal, shape_idx):
 			if not dragging:
 				Globals.call_message("clear_hover", [])
 				dragging = true
-				body.translation.y += 0.5
+				translation.y = 1
 
 func over_card():
 	Globals.mouse_over(self)

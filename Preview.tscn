@@ -1,7 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Card.tscn" type="PackedScene" id=1]
 [ext_resource path="res://unlit_env.tres" type="Environment" id=2]
+[ext_resource path="res://CardTemplate.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+resource_local_to_scene = true
+script = ExtResource( 3 )
+sides = [ [ {
+"height": 715,
+"path": "magic_card.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+}, {
+"bottom": 81,
+"left": 151,
+"right": 333,
+"top": 36,
+"type": "label",
+"var": "name"
+} ], [ {
+"height": 715,
+"path": "cardBack_blue1.png",
+"stretch": true,
+"type": "texture",
+"width": 483
+} ] ]
 
 [node name="Preview" type="Spatial"]
 
@@ -13,3 +38,4 @@ environment = ExtResource( 2 )
 
 [node name="Card" parent="Component" instance=ExtResource( 1 )]
 visible = false
+template = SubResource( 1 )
