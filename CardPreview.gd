@@ -14,12 +14,13 @@ func hover(node):
 	hovered = node
 	#hovered.texture_resolution = Globals.tex_res_high
 	#hovered.rebuild()
-	card_copy = load("res://Card.tscn").instance()
-	card_copy.template = node.template
-	card_copy.values = node.values
-	card_copy.translation = Vector3(0,0,0)
-	card_copy.texture_resolution = Globals.tex_res_very_high
-	vp.get_node("Preview/Component").add_child(card_copy)
+	if hovered is Card:
+		card_copy = load("res://Card.tscn").instance()
+		card_copy.template = node.template
+		card_copy.values = node.values
+		card_copy.translation = Vector3(0,0,0)
+		card_copy.texture_resolution = Globals.tex_res_very_high
+		vp.get_node("Preview/Component").add_child(card_copy)
 	
 func clear_hover():
 	# TODO should wait here until the preview card is finished rebuilding

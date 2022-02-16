@@ -148,6 +148,8 @@ func _ready():
 	#move_down()
 	
 func move_down():
+	if not get_tree():
+		return
 	var orig_x = translation.x
 	var orig_z = translation.z
 	var orig_y = translation.y
@@ -155,19 +157,19 @@ func move_down():
 	var new_x = orig_x
 	var new_z = orig_z
 	var move_again = false
-	print(drop_vector)
+	var col
 	while translation.y > 0:
-		var col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.01))
+		col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.01))
 		new_y = translation.y
 		new_x = translation.x
 		new_z = translation.z
+		if col:
+			break
 		if col and col.collider as Card:
 			var col_card = col.collider as Card
 			try_to_group(col_card)
-			new_x = translation.x
-			new_z = translation.z
-		if col:
-			break
+		if col and col.collider as Stack:
+			col.collider.add_component_to_top(self)
 	translation = Vector3(orig_x, orig_y, orig_z)
 	var steps = 5.0
 	for i in range(steps+1.0):
@@ -177,13 +179,28 @@ func move_down():
 			lerp(translation.y, new_y, weight),
 			lerp(translation.z, new_z, weight)
 		)
+		if not get_tree():
+			return
 		yield(get_tree(), "idle_frame")
+	if col and try_to_group(col.collider):
+		if col.collider.has_method("add_component_to_top"):
+			col.collider.add_component_to_top(self)
+		else:
+			print(col.collider.name)
+			# TODO handle card colliding with card
+			var stack = load("res://Stack.tscn").instance()
+			get_parent().add_child(stack)
+			stack.translation = translation
+			stack.add_component_to_top(self)
 
 func try_to_group(card):
+	if not "group_with" in card:
+		return false
 	if card.group_with != group_with:
-		return
+		return false
 	translation.x = card.translation.x
 	translation.z = card.translation.z
+	return true
 
 func grab():
 	Globals.call_message("clear_hover", [])
@@ -232,7 +249,6 @@ func adjust_height():
 	var result = space_state.intersect_ray(
 		camera.global_transform.origin, 
 		camera.global_transform.origin+_drop_vector*100,[], 1)
-	print(result)
 	if "push_up" in result.collider:
 		if translation.y < result.collider.translation.y:
 			translation.y = result.collider.translation.y + 1
