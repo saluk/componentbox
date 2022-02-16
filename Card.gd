@@ -18,6 +18,8 @@ var texture_resolution:int
 var dirty_jobs = []
 var dirty_frames = 2
 
+var drop_vector = Vector3(0, -1, 0)
+
 func get_texture_string(var side_name):
 	var s = str(template.get_instance_id()) + "S("+side_name+")"
 	s += "G("+group_with+")"
@@ -152,9 +154,12 @@ func move_down():
 	var new_x = orig_x
 	var new_z = orig_z
 	var move_again = false
+	print(drop_vector)
 	while translation.y > 0:
-		var col = move_and_collide(Vector3(0,-0.01,0))
+		var col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.01))
 		new_y = translation.y
+		new_x = translation.x
+		new_z = translation.z
 		if col and col.collider as Card:
 			var col_card = col.collider as Card
 			try_to_group(col_card)
@@ -190,6 +195,11 @@ func get_plane_point(camera:Camera, mouse_position:Vector2):
 	var d = translation.y
 	var t = -(n.dot(p)+d)/n.dot(v)
 	return p+t*v
+	
+func get_drop_vector(mouse_position:Vector2):
+	var camera = get_viewport().get_camera()
+	var hit_point = get_plane_point(camera, mouse_position)
+	return (hit_point - camera.global_transform.origin).normalized()
 
 func translate_movement(event):
 	var camera = get_viewport().get_camera()
@@ -210,6 +220,7 @@ func _unhandled_input(event):
 		if not event.pressed:
 			if dragging:
 				dragging = false
+				drop_vector = get_drop_vector(event.position)
 				drop()
 	if event is InputEventMouseMotion and dragging:
 		translate_movement(event)

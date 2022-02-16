@@ -22,10 +22,10 @@ environment = ExtResource( 1 )
 
 [node name="Tabletop" type="Spatial"]
 
-[node name="ClearHover" type="StaticBody" parent="."]
+[node name="TableInteract" type="StaticBody" parent="."]
 script = ExtResource( 10 )
 
-[node name="CollisionShape" type="CollisionShape" parent="ClearHover"]
+[node name="CollisionShape" type="CollisionShape" parent="TableInteract"]
 shape = SubResource( 1 )
 
 [node name="CameraControl" type="Spatial" parent="."]

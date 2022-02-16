@@ -7,6 +7,8 @@ func _input(event):
 		if Input.is_mouse_button_pressed(BUTTON_RIGHT):
 			rotate(Vector3(1,0,0), -event.relative.y*0.02)
 		else:
+			# Disable as it messes with the projection math
+			#return
 			var mp = get_viewport().get_mouse_position()
 			var w = get_viewport().size.x
 			var h = get_viewport().size.y
@@ -17,5 +19,5 @@ func _input(event):
 			camera.rotation_degrees.x = -80 -y_quad * 20
 			camera.rotation_degrees.y = -x_quad* 50
 			camera.rotation_degrees.z = x_quad * 50
-			translation.x = x_quad * 4
-			translation.z = y_quad * 4
+			camera.translation.x = x_quad * 4
+			camera.translation.z = y_quad * 4
