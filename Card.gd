@@ -2,6 +2,7 @@ extends KinematicBody
 class_name Card
 
 var dragging = false
+var push_up = true # pushes up any components dragged on top of it
 
 export var template:Resource
 export var values:Dictionary
@@ -183,8 +184,16 @@ func try_to_group(card):
 		return
 	translation.x = card.translation.x
 	translation.z = card.translation.z
+
+func grab():
+	Globals.call_message("clear_hover", [])
+	dragging = true
+	translation.y = max(1.0, translation.y+0.5)
+	collision.disabled = true
 	
 func drop():
+	dragging = false
+	collision.disabled = false
 	move_down()
 	Globals.call_message("drop_node", [self])
 
@@ -214,16 +223,29 @@ func translate_movement(event):
 	translation.x = final_3d.x
 	translation.z = final_3d.z
 	#translation += trans_vector
+	
+func adjust_height():
+	var camera = get_viewport().get_camera()
+	var cur_pos = get_viewport().get_mouse_position()
+	var _drop_vector = get_drop_vector(cur_pos)
+	var space_state = get_world().direct_space_state
+	var result = space_state.intersect_ray(
+		camera.global_transform.origin, 
+		camera.global_transform.origin+_drop_vector*100,[], 1)
+	print(result)
+	if "push_up" in result.collider:
+		if translation.y < result.collider.translation.y:
+			translation.y = result.collider.translation.y + 1
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		if not event.pressed:
 			if dragging:
-				dragging = false
 				drop_vector = get_drop_vector(event.position)
 				drop()
 	if event is InputEventMouseMotion and dragging:
 		translate_movement(event)
+		adjust_height()
 	if event is InputEventKey and event.pressed and event.scancode == KEY_F and Globals.current_mouse_component() == self:
 		body.rotation_degrees.z += 180
 		Globals.call_message("hover", [self])
@@ -237,9 +259,7 @@ func _input_event(camera, event, click_position, click_normal, shape_idx):
 	if event is InputEventMouseButton:
 		if event.pressed:
 			if not dragging:
-				Globals.call_message("clear_hover", [])
-				dragging = true
-				translation.y = max(1.0, translation.y+0.5)
+				grab()
 
 func over_card():
 	Globals.mouse_over(self)
