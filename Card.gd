@@ -46,7 +46,6 @@ func build():
 		var side_name = side_obs.pop_front()
 		var side_mesh:MeshInstance = get_node("Body/"+side_name)
 		build_side(side_name, side, side_mesh)
-	print("set extents")
 		
 func build_side(side_name, side, side_mesh):
 	side_mesh.set("material/0", side_mesh.get("material/0").duplicate())
@@ -140,7 +139,6 @@ func _ready():
 	connect("mouse_exited", self, "left_card")
 	if not texture_resolution:
 		texture_resolution = Globals.tex_res_low
-	print("set extents")
 	collision = get_node("CollisionShape")
 	rebuild()
 	#translation.y = 1
@@ -185,6 +183,28 @@ func drop():
 	move_down()
 	Globals.call_message("drop_node", [self])
 
+func get_plane_point(camera:Camera, mouse_position:Vector2):
+	var n = Vector3(0, -1, 0)
+	var p = camera.project_ray_origin(mouse_position)
+	var v = camera.project_ray_normal(mouse_position)
+	var d = translation.y
+	var t = -(n.dot(p)+d)/n.dot(v)
+	return p+t*v
+
+func translate_movement(event):
+	var camera = get_viewport().get_camera()
+	var cur_pos = get_viewport().get_mouse_position()
+	var prev_pos = cur_pos - event.relative
+	var final_3d = get_plane_point(
+		camera, cur_pos
+	)
+	var trans_vector = final_3d - get_plane_point(
+		camera, prev_pos
+	)
+	#translation.x = final_3d.x
+	#translation.z = final_3d.z
+	translation += trans_vector
+
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		if not event.pressed:
@@ -192,7 +212,7 @@ func _unhandled_input(event):
 				dragging = false
 				drop()
 	if event is InputEventMouseMotion and dragging:
-		translation += Vector3(event.relative.x / 100, 0, event.relative.y/100)
+		translate_movement(event)
 	if event is InputEventKey and event.pressed and event.scancode == KEY_F and Globals.current_mouse_component() == self:
 		body.rotation_degrees.z += 180
 		Globals.call_message("hover", [self])
