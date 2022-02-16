@@ -29,11 +29,11 @@ script = ExtResource( 10 )
 shape = SubResource( 1 )
 
 [node name="CameraControl" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.966752, -0.255716, 0, 0.255716, 0.966752, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.991572, -0.129557, 0, 0.129557, 0.991572, 0, 0, 0 )
 script = ExtResource( 12 )
 
 [node name="Camera" type="Camera" parent="CameraControl"]
-transform = Transform( 1, 0, 0, 0, 0.173648, 0.984808, 0, -0.984808, 0.173648, 0.322805, 4.60995, 0.502723 )
+transform = Transform( 1, 0, 0, 0, 0.173648, 0.984808, 0, -0.984808, 0.173648, 0.322805, 5.26915, 0.712942 )
 environment = ExtResource( 1 )
 current = true
 

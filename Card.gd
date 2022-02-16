@@ -201,9 +201,9 @@ func translate_movement(event):
 	var trans_vector = final_3d - get_plane_point(
 		camera, prev_pos
 	)
-	#translation.x = final_3d.x
-	#translation.z = final_3d.z
-	translation += trans_vector
+	translation.x = final_3d.x
+	translation.z = final_3d.z
+	#translation += trans_vector
 
 func _unhandled_input(event):
 	if event is InputEventMouseButton:
