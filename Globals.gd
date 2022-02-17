@@ -3,21 +3,27 @@ extends Node
 var nodes = {}
 var messages = {}
 var _mouse_over:Node
+var stack_over:Node
 
 var build_cards = []
-var MAX_CARDS = 10
+var MAX_CARDS = null
 var cache_tex = {}
 var building_card = false
 var tex_res_low = 256
 var tex_res_high = 512
 var tex_res_very_high = 512
 
+func _ready():
+	randomize()
+
 func _process(_delta):
 	var i = 0
-	if building_card:
+	# TODO this should be a signal
+	if building_card and is_instance_valid(building_card) and not building_card.is_queued_for_deletion():
 		return
-	while i<min(build_cards.size(), MAX_CARDS):
-		if build_cards.size():
+	var high_amount = build_cards.size() if MAX_CARDS == null else MAX_CARDS
+	if build_cards.size():
+		while i<min(build_cards.size(), high_amount):
 			var c = build_cards.pop_back()
 			if is_instance_valid(c) and not c.is_queued_for_deletion():
 				c.build()

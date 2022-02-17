@@ -3,6 +3,7 @@
 [ext_resource path="res://Stack.gd" type="Script" id=1]
 
 [sub_resource type="BoxShape" id=1]
+resource_local_to_scene = true
 extents = Vector3( 0.5, 0.01, 1 )
 
 [sub_resource type="PlaneMesh" id=2]

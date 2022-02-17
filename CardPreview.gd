@@ -2,7 +2,7 @@ extends ViewportContainer
 
 onready var vp = get_node("Viewport")
 
-var card_copy
+var card_copy:Card
 var hovered
 
 func _ready():

@@ -57,7 +57,7 @@ func build_side(side_name, side, side_mesh):
 		side_mesh.get("material/0").set("albedo_texture", tex)
 		return
 
-	Globals.building_card = true
+	Globals.building_card = self
 
 	var vp = Viewport.new()
 	vp.name = side_name
@@ -125,7 +125,7 @@ func copy_to_texture(vp:Viewport, side_mesh:MeshInstance, side_name:String):
 	Globals.cache_tex[get_texture_hash(side_name)] = tex
 	get_node("Viewports").remove_child(vp)
 	vp.queue_free()
-	Globals.building_card = false
+	Globals.building_card = null
 	
 func _process(_delta):
 	if dirty_frames > 0 and dirty_jobs:
@@ -136,6 +136,7 @@ func _process(_delta):
 			dirty_jobs.empty()
 			collision.shape.extents.x = 501 * (1.0/512) * 0.5
 			collision.shape.extents.z = 701 * (1.0/512) * 0.5
+			rotation_degrees.y = -90 + rand_range(-6.0,6.0)
 
 func _ready():
 	connect("mouse_entered", self, "over_card")
@@ -147,9 +148,14 @@ func _ready():
 	#translation.y = 1
 	#move_down()
 	
-func move_down():
-	if not get_tree():
+func move_down(instant=false):
+	if not is_instance_valid(self) or is_queued_for_deletion() or not get_owner():
+		print(name+" not valid")
 		return
+	if not get_tree():
+		print(name+" not in tree")
+		return
+	print("move down "+name)
 	var orig_x = translation.x
 	var orig_z = translation.z
 	var orig_y = translation.y
@@ -158,40 +164,41 @@ func move_down():
 	var new_z = orig_z
 	var move_again = false
 	var col
-	while translation.y > 0:
-		col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.01))
+	while translation.y > 0.1:
+		col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.001))
 		new_y = translation.y
 		new_x = translation.x
 		new_z = translation.z
 		if col:
+			print("break")
 			break
-		if col and col.collider as Card:
-			var col_card = col.collider as Card
-			try_to_group(col_card)
-		if col and col.collider as Stack:
-			col.collider.add_component_to_top(self)
-	translation = Vector3(orig_x, orig_y, orig_z)
-	var steps = 5.0
-	for i in range(steps+1.0):
-		var weight = i/steps
-		translation = Vector3(
-			lerp(translation.x, new_x, weight),
-			lerp(translation.y, new_y, weight),
-			lerp(translation.z, new_z, weight)
-		)
-		if not get_tree():
-			return
-		yield(get_tree(), "idle_frame")
+	if not instant:
+		translation = Vector3(orig_x, orig_y, orig_z)
+		var steps = 5.0
+		for i in range(steps+1.0):
+			var weight = i/steps
+			translation = Vector3(
+				lerp(translation.x, new_x, weight),
+				lerp(translation.y, new_y, weight),
+				lerp(translation.z, new_z, weight)
+			)
+			if not get_tree():
+				return
+			yield(get_tree(), "idle_frame")
 	if col and try_to_group(col.collider):
 		if col.collider.has_method("add_component_to_top"):
+			print("add card "+name+" to stack "+col.collider.name)
 			col.collider.add_component_to_top(self)
 		else:
-			print(col.collider.name)
-			# TODO handle card colliding with card
+			print("create stack for ", col.collider.name, " and ", name)
 			var stack = load("res://Stack.tscn").instance()
 			get_parent().add_child(stack)
+			stack.group_with = group_with
 			stack.translation = translation
+			stack.add_component_to_top(col.collider)
 			stack.add_component_to_top(self)
+	else:
+		print(name+" didn't hit anything to group with. col was "+str(col))
 
 func try_to_group(card):
 	if not "group_with" in card:
@@ -249,7 +256,7 @@ func adjust_height():
 	var result = space_state.intersect_ray(
 		camera.global_transform.origin, 
 		camera.global_transform.origin+_drop_vector*100,[], 1)
-	if "push_up" in result.collider:
+	if "collider" in result and "push_up" in result.collider:
 		if translation.y < result.collider.translation.y:
 			translation.y = result.collider.translation.y + 1
 
@@ -266,10 +273,14 @@ func _unhandled_input(event):
 		body.rotation_degrees.z += 180
 		Globals.call_message("hover", [self])
 	if event is InputEventKey and event.pressed and event.scancode == KEY_D and Globals.current_mouse_component() == self:
-		var new_card = duplicate()
-		get_parent().add_child(new_card)
-		new_card.translation.y = max(2, translation.y+0.5)
-		new_card.move_down()
+		copy_card()
+		
+func copy_card():
+	var new_card = duplicate()
+	get_parent().add_child(new_card)
+	new_card.owner = get_parent()
+	new_card.translation.y = max(2, translation.y+0.5)
+	new_card.move_down()
 
 func _input_event(camera, event, click_position, click_normal, shape_idx):
 	if event is InputEventMouseButton:
