@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://cinema_env.tres" type="Environment" id=1]
 [ext_resource path="res://Table.tscn" type="PackedScene" id=2]
@@ -12,7 +12,6 @@
 [ext_resource path="res://ClearHover.gd" type="Script" id=10]
 [ext_resource path="res://templates/skeleton.tres" type="Resource" id=11]
 [ext_resource path="res://CameraControl.gd" type="Script" id=12]
-[ext_resource path="res://templates/magic.tres" type="Resource" id=13]
 
 [sub_resource type="BoxShape" id=1]
 extents = Vector3( 9.02553, 0.0529857, 12.6173 )
@@ -54,27 +53,27 @@ values = {
 }
 group_with = "deck1"
 
+[node name="Card2" parent="Table/Surface" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
+values = {
+"name": "skeleton 1"
+}
+group_with = "deck1"
+
 [node name="Card3" parent="Table/Surface" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card2" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card4" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -90,23 +89,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card7" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card8" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -122,23 +121,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card11" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card12" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -154,23 +153,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card15" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card16" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -186,23 +185,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card19" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card20" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -218,23 +217,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card23" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card24" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -250,23 +249,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card27" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card28" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -282,23 +281,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card31" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card32" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -314,23 +313,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card35" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card36" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -346,23 +345,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card39" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card40" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -378,23 +377,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card43" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card44" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -410,23 +409,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card47" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card48" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -442,23 +441,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card51" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card52" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -474,23 +473,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card55" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card56" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -506,23 +505,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card59" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card60" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -538,23 +537,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card63" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card64" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -570,23 +569,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card67" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card68" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -602,23 +601,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card71" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card72" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -634,23 +633,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card75" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card76" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -666,23 +665,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card79" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card80" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -698,23 +697,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card83" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card84" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -730,23 +729,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card87" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card88" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -762,23 +761,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card91" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card92" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -794,23 +793,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card95" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card96" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
@@ -826,2423 +825,23 @@ group_with = "deck1"
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
-"name": "skeleton 2"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card99" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
+template = ExtResource( 11 )
 values = {
-"name": "magic 1"
+"name": "skeleton 1"
 }
 group_with = "deck1"
 
 [node name="Card100" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card101" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card102" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card103" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card104" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card105" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card106" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card107" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card108" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card109" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card110" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card111" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card112" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card113" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card114" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card115" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card116" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card117" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card118" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card119" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card120" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card121" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card122" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card123" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card124" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card125" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card126" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card127" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card128" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card129" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card130" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card131" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card132" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card133" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card134" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card135" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card136" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card137" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card138" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card139" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card140" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card141" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card142" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card143" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card144" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card145" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card146" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card147" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card148" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card149" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card150" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card151" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card152" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card153" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card154" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card155" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card156" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card157" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card158" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card159" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card160" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card161" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card162" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card163" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card164" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card165" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card166" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card167" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card168" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card169" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card170" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card171" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card172" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card173" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card174" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card175" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card176" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card177" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card178" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card179" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card180" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card181" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card182" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card183" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card184" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card185" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card186" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card187" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card188" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card189" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card190" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card191" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card192" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card193" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card194" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card195" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card196" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card197" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card198" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card199" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card200" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card201" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card202" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card203" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card204" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card205" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card206" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card207" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card208" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card209" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card210" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card211" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card212" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card213" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card214" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card215" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card216" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card217" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card218" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card219" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card220" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card221" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card222" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card223" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card224" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card225" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card226" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card227" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card228" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card229" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card230" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card231" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card232" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card233" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card234" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card235" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card236" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card237" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card238" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card239" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card240" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card241" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card242" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card243" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card244" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card245" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card246" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card247" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card248" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card249" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card250" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card251" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card252" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card253" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card254" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card255" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card256" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card257" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card258" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card259" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card260" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card261" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card262" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card263" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card264" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card265" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card266" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card267" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card268" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card269" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card270" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card271" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card272" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card273" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card274" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card275" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card276" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card277" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card278" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card279" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card280" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card281" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card282" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card283" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card284" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card285" parent="Table/Surface" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
 template = ExtResource( 11 )
 values = {
 "name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card286" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card287" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card288" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card289" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card290" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card291" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card292" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card293" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card294" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card295" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card296" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card297" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card298" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card299" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card300" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card301" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card302" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card303" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card304" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card305" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card306" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card307" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card308" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card309" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card310" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card311" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card312" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card313" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card314" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card315" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card316" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card317" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card318" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card319" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card320" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card321" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card322" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card323" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card324" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card325" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card326" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card327" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card328" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card329" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card330" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card331" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card332" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card333" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card334" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card335" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card336" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card337" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card338" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card339" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card340" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card341" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card342" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card343" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card344" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card345" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card346" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card347" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card348" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card349" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card350" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card351" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card352" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card353" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card354" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card355" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card356" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card357" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card358" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card359" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card360" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card361" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card362" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card363" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card364" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card365" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card366" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card367" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card368" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card369" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card370" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card371" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card372" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card373" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card374" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card375" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card376" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card377" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card378" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card379" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card380" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card381" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card382" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card383" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card384" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card385" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card386" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card387" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card388" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card389" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card390" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card391" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card392" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card393" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card394" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card395" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card396" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
-}
-group_with = "deck1"
-
-[node name="Card397" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 1"
-}
-group_with = "deck1"
-
-[node name="Card398" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3.04886, 0 )
-template = ExtResource( 11 )
-values = {
-"name": "skeleton 2"
-}
-group_with = "deck1"
-
-[node name="Card399" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 1"
-}
-group_with = "deck1"
-
-[node name="Card400" parent="Table/Surface" instance=ExtResource( 3 )]
-transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 3, 0 )
-template = ExtResource( 13 )
-values = {
-"name": "magic 2"
 }
 group_with = "deck1"
 

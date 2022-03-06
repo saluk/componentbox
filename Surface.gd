@@ -13,8 +13,8 @@ func _ready():
 	#Globals.register_message("drop_node", self)
 		
 func stablize():
-	#yield(get_tree(), "idle_frame")
-	#yield(get_tree(), "idle_frame")
+	yield(get_tree(), "idle_frame")
+	yield(get_tree(), "idle_frame")
 	var children = get_children()
 	for i in range(0, children.size()):
 		var card = children[i]
@@ -22,7 +22,9 @@ func stablize():
 		card.translation.y = 2
 		yield(get_tree(), "idle_frame")
 		card.move_down(true)
-		yield(get_tree(), "idle_frame")
+		#yield(get_tree(), "idle_frame")
+	yield(get_tree(), "idle_frame")
+	yield(get_tree(), "idle_frame")
 
 # This is setting heights of the cards in order so that there are no overlaps
 # But it's probably better to handle this with collisions

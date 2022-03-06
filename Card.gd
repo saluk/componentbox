@@ -165,12 +165,14 @@ func move_down(instant=false):
 	var move_again = false
 	var col
 	while translation.y > 0.1:
-		col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.001))
+		col = move_and_collide(Vector3(1,1,1) * (drop_vector*0.25))
 		new_y = translation.y
 		new_x = translation.x
 		new_z = translation.z
 		if col:
-			print("break")
+			print(col.position)
+			translation.y = col.position.y-0.24
+			new_y = translation.y
 			break
 	if not instant:
 		translation = Vector3(orig_x, orig_y, orig_z)
